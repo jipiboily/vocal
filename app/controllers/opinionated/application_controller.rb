@@ -1,4 +1,2 @@
-module Opinionated
-  class ApplicationController < ActionController::Base
-  end
+class Opinionated::ApplicationController < ActionController::Base
 end
