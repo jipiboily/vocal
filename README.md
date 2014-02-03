@@ -16,10 +16,12 @@ A Ruby (Rails || Sinatra) blogging engine, with opinions.
 -- Client: Redis caching
 -- Client: Turbolinks
 -- Client: CDN
+- keyboard shortcuts & navigation
 - Markdown
 -- GitHub Flavored Markdown + code highlighting on BOTH, admin AND frontend
 - "Static pages"
 -- Make it easy to add pages like "About" or whatever else
+- when done reading (or almost), suggest another related post
 
 ### Bonus features
 
@@ -54,6 +56,9 @@ A Ruby (Rails || Sinatra) blogging engine, with opinions.
 -- https://github.com/LeaVerou/prism/
 -- https://github.com/isagalaev/highlight.js
 
+- interesting:
+-- http://wicky.nillia.ms/headroom.js/
+
 
 ## Later?
 
@@ -64,4 +69,14 @@ A Ruby (Rails || Sinatra) blogging engine, with opinions.
 
 ```ruby
 rails plugin new opinionated --full --mountable --dummy-path spec/dummy --skip-test-unit
+rails g model user email name password_digest
 ```
+
+## Models
+
+- User
+- Content
+- Page < Content
+- Post < Content
+- Tags
+- ...?
