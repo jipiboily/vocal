@@ -1,7 +1,6 @@
 require 'spec_helper'
 
 describe Opinionated::Admin::AppController do
-  routes { Opinionated::Engine.routes }
   let(:user) { create :user }
 
   describe 'authentication' do

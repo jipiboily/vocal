@@ -6,4 +6,5 @@ end
 
 RSpec.configure do |config|
   config.include Opinionated::SpecRouteHelper, type: :routing
+  config.include Opinionated::SpecRouteHelper, type: :controller
 end
