@@ -6,4 +6,7 @@ module Opinionated
       g.test_framework :rspec
     end
   end
+
+  module Opinionated::Admin
+  end
 end

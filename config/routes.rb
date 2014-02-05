@@ -1,3 +1,8 @@
 Opinionated::Engine.routes.draw do
-  get '/admin' => 'admin#app'
+
+  namespace :admin do
+    get '/' => 'app#app'
+  end
+
+  get 'login', to: 'sessions#new', as: 'login'
 end
