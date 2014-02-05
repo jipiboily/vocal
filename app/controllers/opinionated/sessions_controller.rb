@@ -3,5 +3,6 @@ class Opinionated::SessionsController < Opinionated::AdminController
 
   def new
     redirect_to admin_path if current_user
+    redirect_to signup_path if Opinionated::User.all.count == 0
   end
 end

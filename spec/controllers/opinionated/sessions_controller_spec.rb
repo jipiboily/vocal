@@ -5,11 +5,22 @@ describe Opinionated::SessionsController do
 
   describe 'GET #new' do
     context 'unauthenticated user' do
-      before do
-        get :new
+      context 'no user account created yet' do
+        before do
+          get :new
+        end
+
+        it { expect(response).to redirect_to signup_path }
       end
 
-      it { expect(response).to render_template(:new) }
+      context 'at least one user created' do
+        before do
+          create :user
+          get :new
+        end
+
+        it { expect(response).to render_template(:new) }
+      end
     end
 
     context 'authenticated user' do
