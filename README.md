@@ -2,6 +2,8 @@
 
 A Ruby (Rails || Sinatra) blogging engine, with opinions.
 
+[![Build Status](http://ci.wizestudios.com/github.com/jipiboily/opinionated/status.png?branch=master)](http://ci.wizestudios.com/github.com/jipiboily/opinionated/tree/master)
+
 ## Some opinions
 
 - Not minimal, might not be as easy to plug in existing apps as Monologue
