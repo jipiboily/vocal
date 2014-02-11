@@ -1,5 +1,6 @@
 image: ruby2.0.0
 script:
+  - cp spec/dummy/config/database.drone.yml spec/dummy/config/database.yml
   - bundle install
   - bundle exec rspec spec
 services:
