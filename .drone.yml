@@ -1,0 +1,9 @@
+image: ruby2.0.0
+script:
+  - bundle exec rspec spec
+services:
+  - postgres
+notify:
+  email:
+    recipients:
+      - j@jipi.ca
