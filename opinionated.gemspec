@@ -20,8 +20,11 @@ Gem::Specification.new do |s|
   s.add_dependency "bcrypt-ruby", "~> 3.1.2"
 
   s.add_development_dependency 'puma'
-  s.add_development_dependency "rspec-rails", "~> 3.0.0.beta1"
+  s.add_development_dependency "rspec-rails"
   s.add_development_dependency "factory_girl_rails", "~> 4.0"
   s.add_development_dependency 'shoulda-matchers'
   s.add_development_dependency 'pg'
+  s.add_development_dependency "guard-rspec", "~> 4.2.5"
+  s.add_development_dependency 'spring'
+  s.add_development_dependency "spring-commands-rspec"
 end
