@@ -27,4 +27,5 @@ Gem::Specification.new do |s|
   s.add_development_dependency "guard-rspec", "~> 4.2.5"
   s.add_development_dependency 'spring'
   s.add_development_dependency "spring-commands-rspec"
+  s.add_development_dependency 'terminal-notifier-guard'
 end
