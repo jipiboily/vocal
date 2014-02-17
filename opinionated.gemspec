@@ -17,6 +17,7 @@ Gem::Specification.new do |s|
   s.files = Dir['{app,config,db,lib}/**/*', 'MIT-LICENSE', 'Rakefile', 'README.rdoc']
 
   s.add_dependency 'rails', '~> 4.1.0.beta1'
+  s.add_dependency 'slim', '~> 2.0.2'
   s.add_dependency 'bcrypt-ruby', '~> 3.1.2'
 
   s.add_development_dependency 'puma'
@@ -28,4 +29,5 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'spring', '~> 1.1.1'
   s.add_development_dependency 'spring-commands-rspec'
   s.add_development_dependency 'terminal-notifier-guard'
+  s.add_development_dependency 'pry'
 end
