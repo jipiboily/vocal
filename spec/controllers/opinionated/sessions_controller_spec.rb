@@ -32,4 +32,34 @@ describe Opinionated::SessionsController do
       it { expect(response).to redirect_to(admin_path) }
     end
   end
+
+  describe 'POST #create' do
+    context 'valid credentials' do
+      before do
+        post :create, email: user.email, password: 'passwd123'
+      end
+
+      it { expect(session[:opinionated_user_id]).to eq Opinionated::User.last.id }
+      it { expect(response).to redirect_to(admin_path) }
+    end
+
+    context 'invalid credentials' do
+      before do
+        post :create, email: user.email, password: 'm...'
+      end
+
+      it { expect(session[:opinionated_user_id]).to be_nil }
+      it { expect(response).to render_template(:new) }
+    end
+  end
+
+  describe 'GET #logout' do
+    before do
+      sign_in_as user
+      get :destroy
+    end
+
+    it { expect(session[:opinionated_user_id]).to be_nil }
+    it { expect(response).to redirect_to(login_path) }
+  end
 end

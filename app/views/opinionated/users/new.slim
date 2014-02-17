@@ -1,0 +1,21 @@
+h1 Sign Up
+= form_for @user do |f|
+  - if @user.errors.any?
+    .error_messages
+      h2 Form is invalid
+      ul
+        - @user.errors.full_messages.each do |message|
+          li= message
+  .field
+    = f.label :name
+    = f.text_field :name
+  .field
+    = f.label :email
+    = f.text_field :email
+  .field
+    = f.label :password
+    = f.password_field :password
+  .field
+    = f.label :password_confirmation
+    = f.password_field :password_confirmation
+  .actions= f.submit "Sign Up"
