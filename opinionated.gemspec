@@ -16,9 +16,11 @@ Gem::Specification.new do |s|
 
   s.files = Dir['{app,config,db,lib}/**/*', 'MIT-LICENSE', 'Rakefile', 'README.rdoc']
 
-  s.add_dependency 'rails', '~> 4.1.0.beta1'
+  s.add_dependency 'rails', "~> 4.1.0.rc1"
   s.add_dependency 'slim', '~> 2.0.2'
   s.add_dependency 'bcrypt-ruby', '~> 3.1.2'
+  s.add_dependency 'rails-assets-foundation', '~> 5.1.1'
+  s.add_dependency 'sass-rails', '~> 4.0.0.rc1'
 
   s.add_development_dependency 'puma'
   s.add_development_dependency 'rspec-rails'

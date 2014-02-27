@@ -1,4 +1,5 @@
 require 'slim'
+require 'rails-assets-foundation'
 
 module Opinionated
   class Engine < ::Rails::Engine
