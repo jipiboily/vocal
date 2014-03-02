@@ -2,6 +2,7 @@ Opinionated::Engine.routes.draw do
 
   namespace :admin do
     get '/' => 'app#app'
+    resources :posts
   end
 
   get 'login', to: 'sessions#new', as: 'login'
