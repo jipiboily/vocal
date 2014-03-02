@@ -17,9 +17,14 @@ Gem::Specification.new do |s|
   s.files = Dir['{app,config,db,lib}/**/*', 'MIT-LICENSE', 'Rakefile', 'README.rdoc']
 
   s.add_dependency 'rails', "~> 4.1.0.rc1"
+  s.add_dependency 'active_model_serializers', '~> 0.8.1'
   s.add_dependency 'slim', '~> 2.0.2'
-  s.add_dependency 'bcrypt-ruby', '~> 3.1.2'
+  s.add_dependency "bcrypt", "~> 3.1.7"
   s.add_dependency 'rails-assets-foundation', '~> 5.1.1'
+  s.add_dependency 'ember-source', '~> 1.4.0'
+  s.add_dependency 'ember-rails', '~> 0.14.1'
+  s.add_dependency 'emblem-rails', '~> 0.2.1'
+  s.add_dependency 'coffee-rails', '~> 4.0.1'
   s.add_dependency 'sass-rails', '~> 4.0.0.rc1'
 
   s.add_development_dependency 'puma'
