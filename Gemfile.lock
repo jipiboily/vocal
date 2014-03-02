@@ -2,11 +2,12 @@ PATH
   remote: .
   specs:
     opinionated (0.0.1)
-      active_model_serializers (~> 0.8.1)
+      active_model_serializers (~> 0.9.0.alpha1)
       bcrypt (~> 3.1.7)
       coffee-rails (~> 4.0.1)
+      ember-data-source (~> 1.0.0.beta.7)
       ember-rails (~> 0.14.1)
-      ember-source (~> 1.4.0)
+      ember-source (~> 1.5.0.beta.3)
       emblem-rails (~> 0.2.1)
       rails (~> 4.1.0.rc1)
       rails-assets-foundation (~> 5.1.1)
@@ -30,8 +31,8 @@ GEM
       activesupport (= 4.1.0.rc1)
       builder (~> 3.1)
       erubis (~> 2.7.0)
-    active_model_serializers (0.8.1)
-      activemodel (>= 3.0)
+    active_model_serializers (0.9.0.alpha1)
+      activemodel (>= 3.2)
     activemodel (4.1.0.rc1)
       activesupport (= 4.1.0.rc1)
       builder (~> 3.1)
@@ -70,7 +71,7 @@ GEM
       execjs
     coffee-script-source (1.7.0)
     diff-lcs (1.2.5)
-    ember-data-source (0.14)
+    ember-data-source (1.0.0.beta.7)
       ember-source
     ember-rails (0.14.1)
       active_model_serializers
@@ -81,7 +82,7 @@ GEM
       handlebars-source
       jquery-rails (>= 1.0.17)
       railties (>= 3.1)
-    ember-source (1.4.0)
+    ember-source (1.5.0.beta.3)
       handlebars-source (~> 1.0)
     emblem-rails (0.2.1)
       barber-emblem (~> 0.1.1)
