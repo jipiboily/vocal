@@ -1,5 +1,0 @@
-h1 posts...
-.posts
-  ul
-    = each post in controller
-      li= post.title

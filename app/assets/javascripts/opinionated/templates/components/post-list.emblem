@@ -1,0 +1,4 @@
+.posts
+  ul
+    = each post in posts
+      li=link-to 'post' post | #{post.title}

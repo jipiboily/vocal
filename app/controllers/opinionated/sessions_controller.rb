@@ -1,5 +1,6 @@
 class Opinionated::SessionsController < Opinionated::AdminController
   skip_before_action :authorize, only: [:new, :create]
+  layout 'opinionated/application'
 
   def new
     redirect_to admin_path if current_user
