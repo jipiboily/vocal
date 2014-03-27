@@ -3,9 +3,8 @@ before_script:
   - cp spec/dummy/config/database.travis.yml spec/dummy/config/database.yml
   - cd spec/dummy
   - bundle exec rake db:create db:migrate
-  - cd ../..
 script:
-  - bundle exec rpsec
+  - bundle exec rspec
 rvm:
   - 2.0.0
   - 2.1.1
