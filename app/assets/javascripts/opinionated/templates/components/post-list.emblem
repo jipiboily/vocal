@@ -1,4 +1,5 @@
 .posts
+  h2 Posts
   ul
     = each post in posts
       li=link-to 'post' post | #{post.title}

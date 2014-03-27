@@ -1,2 +1,6 @@
 h1 Opinionated's admin
 = outlet
+
+nav class="top-bar" data-topbar=''
+  ul class="title-area"
+    li class='name' My Site

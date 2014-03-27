@@ -1,2 +1,0 @@
-h1= post.title
-= post-list posts=posts

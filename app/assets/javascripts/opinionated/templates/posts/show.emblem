@@ -1,0 +1,3 @@
+= post-list posts=posts
+h1= controller.title
+p= controller.markdown
