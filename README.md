@@ -4,7 +4,7 @@ A Rails blogging engine, with opinions.
 
 **IMPORTANT**: this is a very, very, very early version, not yet implemented and unlikely to get finished anytime soon.
 
-[![Build Status](http://ci.wizestudios.com/github.com/jipiboily/opinionated/status.png?branch=master)](http://ci.wizestudios.com/github.com/jipiboily/opinionated/tree/master)
+[![Build Status](https://travis-ci.org/jipiboily/opinionated.svg)](https://travis-ci.org/jipiboily/opinionated)
 
 ## Some opinions
 
