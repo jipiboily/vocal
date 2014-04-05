@@ -8,6 +8,8 @@ A Rails blogging engine, with opinions.
 
 ## Some opinions
 
+- everything will be in Markdown
+- admin will be using Ember with real time preview
 - I do not aim for minimal requirements, so it might not be as easy to mount into an existing app as [Monologue](https://github.com/jipiboily/monologue) is
 - will not try to get anything working for old browsers
 
