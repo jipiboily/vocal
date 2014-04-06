@@ -1,3 +1,3 @@
 Opinionated.PostsRoute = Ember.Route.extend
   model: ->
-    @store.find('post')
+    @store.findAll('post')
