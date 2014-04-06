@@ -1,5 +1,13 @@
-nav.tab-bar
-  a.left-off-canvas-toggle.menu-icon href="#" 
-    span Opinionated
+.off-canvas-wrap
+  .inner-wrap
 
-= outlet
+    nav.tab-bar
+      a.left-off-canvas-toggle.menu-icon href="#" 
+        span Opinionated
+
+    aside.left-off-canvas-menu
+      ul.off-canvas-list
+        li
+          a href="/logout" Logout
+    
+    = outlet
