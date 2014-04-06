@@ -1,6 +1,5 @@
-h1 Opinionated's admin
-= outlet
+nav.tab-bar
+  a.left-off-canvas-toggle.menu-icon href="#" 
+    span Opinionated
 
-nav class="top-bar" data-topbar=''
-  ul class="title-area"
-    li class='name' My Site
+= outlet
