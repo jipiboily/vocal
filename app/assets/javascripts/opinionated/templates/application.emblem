@@ -8,6 +8,8 @@
     aside.left-off-canvas-menu
       ul.off-canvas-list
         li
+          a href='/admin#/' Admin's home screen
+        li
           a href="/logout" Logout
     
     = outlet
