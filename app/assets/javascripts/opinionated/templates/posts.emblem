@@ -1,0 +1,6 @@
+h2 Blog posts
+ul
+  = each
+    li=link-to 'post' this | #{title}
+
+= outlet
