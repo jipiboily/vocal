@@ -14,3 +14,6 @@ $(document).foundation()
 
 $(document).on "click", ".off-canvas-list a", (e) ->
   $(".left-off-canvas-toggle").click()
+  
+Ember.Handlebars.helper "render-markdown", (input) ->
+  'rendered markdown...'

@@ -1,7 +1,8 @@
 .post-edit
   form
-    input{ bindAttr value="controller.title" } type="text"
+    input{ bind-attr value="controller.title" } type="text"
 
-  div.markdown.large-6.columns contenteditable="true" = controller.markdown
+  div.markdown.large-6.columns contenteditable="true"
+    = controller.markdown
   div.preview.large-6.columns
-    ...
+    = render-markdown markdown
