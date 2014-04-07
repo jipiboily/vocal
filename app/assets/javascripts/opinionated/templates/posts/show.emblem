@@ -1,2 +1,3 @@
 h1= controller.title
 p= controller.markdown
+= link-to 'post.edit' controller | Edit
