@@ -1,1 +1,3 @@
-h1 New post
+.post-new
+  form
+    input type="text" {{controller.title}}

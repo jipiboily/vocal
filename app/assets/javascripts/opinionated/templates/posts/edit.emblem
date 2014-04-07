@@ -1,2 +1,7 @@
-h1 Edit post "#{controller.title}"
-p= controller.markdown
+.post-edit
+  form
+    input{ bindAttr value="controller.title" } type="text"
+
+  div.markdown.large-6.columns contenteditable="true" = controller.markdown
+  div.preview.large-6.columns
+    ...
