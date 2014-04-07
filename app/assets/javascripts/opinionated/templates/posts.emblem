@@ -1,6 +1,6 @@
 h2 Blog posts
 ul
   = each
-    li=link-to 'post' this | #{title}
+    li=link-to 'post.show' this | #{title}
 
 = outlet

@@ -2,4 +2,6 @@
 
 Opinionated.Router.map ()->
   @resource "posts", path: '/', ->
-    @resource "post", path: "/posts/:post_id"
+    @resource "post.show", path: "/posts/:post_id"
+  @resource "post.new", path: "/posts/new"
+  @resource "post.edit", path: "/posts/:post_id/edit"
