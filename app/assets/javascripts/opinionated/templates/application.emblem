@@ -8,7 +8,9 @@
     aside.left-off-canvas-menu
       ul.off-canvas-list
         li
-          a href='/admin#/' Admin's home screen
+          = link-to 'posts' | Post list
+        li
+          = link-to 'post.new' | New post
         li
           a href="/logout" Logout
     

@@ -11,3 +11,6 @@
 #= require_self
 
 $(document).foundation()
+
+$(document).on "click", ".off-canvas-list a", (e) ->
+  $(".left-off-canvas-toggle").click()
