@@ -1,6 +1,9 @@
-h2 Blog posts
-ul
-  = each
-    li=link-to 'post.show' this | #{title}
+.post-list.row
+  .posts.large-3.columns
+    h2 Blog posts
+    ul
+      = each
+        li=link-to 'post.show' this | #{title}
 
-= outlet
+  .post.large-9.columns
+    = outlet
