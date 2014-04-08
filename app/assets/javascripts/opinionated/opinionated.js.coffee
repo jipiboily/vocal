@@ -48,6 +48,7 @@ class @Opidown
     content = content.replace(/<br>/g, "\n")
     content = content.replace(/<div>/g, "\n")
     content = content.replace(/<\/div>/g, "")
+    content = content.replace(/&nbsp;/g, "")
     content
 
 window.opidown = new Opidown
