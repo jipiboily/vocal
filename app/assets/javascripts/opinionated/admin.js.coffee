@@ -2,6 +2,7 @@
 #= require handlebars
 #= require ember
 #= require ember-data
+#= require marked
 #= require_self
 #= require opinionated/opinionated
 
