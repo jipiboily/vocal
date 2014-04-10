@@ -8,6 +8,7 @@
 #= require_tree ./templates
 #= require_tree ./routes
 #= require ./router
+#= require ./lib/editor
 #= require_self
 
 $(document).foundation()
@@ -28,27 +29,10 @@ marked.setOptions
   breaks: false
   pedantic: false
   sanitize: true
-  smartLists: true
+  smartLists: false
+  # smartLists: true
   smartypants: false
 
-$(document).on 'keyup', '.markdown', ->
-  markdown = $(this).html()
-  console.log('NOT CLEAN YET:')
-  console.log(markdown)
-  markdown = window.opidown.clean(markdown)
-  console.log('Cleaned Markdown:')
-  console.log(markdown)
-  rendered_preview = new Handlebars.SafeString(marked(markdown)).string
-  console.log('Rendered preview:')
-  console.log(rendered_preview)
-  $('.preview').html(rendered_preview)
 
-class @Opidown
-  clean: (content) ->
-    content = content.replace(/<br>/g, "\n")
-    content = content.replace(/<div>/g, "\n")
-    content = content.replace(/<\/div>/g, "")
-    content = content.replace(/&nbsp;/g, "")
-    content
-
-window.opidown = new Opidown
+editor = new opinionatedEditor('.markdown', '.preview', true)
+editor.init()
