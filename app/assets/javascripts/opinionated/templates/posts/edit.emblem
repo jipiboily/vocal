@@ -1,8 +1,2 @@
 .post-edit
-  form
-    input{ bind-attr value="controller.title" } type="text"
-
-  div.markdown.large-6.columns contenteditable="true"
-    = unbound controller.markdown
-  div.preview.large-6.columns
-    = render-markdown markdown
+  render "posts/_form" controller
