@@ -8,10 +8,13 @@ A Rails blogging engine, with opinions.
 
 ## Some opinions
 
-- everything will be in Markdown
-- admin will be using Ember with real time preview
+- everything will be in Markdown, with live preview
+- admin will be using Ember
 - I do not aim for minimal requirements, so it might not be as easy to mount into an existing app as [Monologue](https://github.com/jipiboily/monologue) is
 - will not try to get anything working for old browsers
+- I want it to be fast to load for readers
+- I would love a dashboard with some basic analytics (not sure about the details)
+- I want a couple of features to help reader retention (reading suggestions when reaching the end being one)
 
 ## Installation
 
@@ -20,21 +23,20 @@ A Rails blogging engine, with opinions.
 
 ## Features
 
-
 - nice environment to write (admin)
   - side by side edit + preview
 - Markdown
   - GitHub Flavored Markdown + code highlighting on BOTH, admin AND frontend
-- nice & responsive frontend
+- nice, clean & responsive frontend
 - speed: mostly for our clients, but for the admin, too!
   - Admin: Ember + API
   - Client: Redis caching (or maybe something else)
   - Client: Turbolinks?
   - Client: CDN and all that jazz
-- "Static pages"
+- Pages
   - Make it easy to add pages like "About" or whatever else
 - when done reading (or almost), suggest another related post
-- keyboard shortcuts & navigation
+- keyboard shortcuts & navigation (in admin)
 
 ### Bonus features
 
@@ -55,10 +57,5 @@ A Rails blogging engine, with opinions.
 - Rails
   - Engine
 - slim && Emblem.js
-- JS code highlighting?
-  - http://craig.is/making/rainbows/
-  - https://github.com/LeaVerou/prism/
-  - https://github.com/isagalaev/highlight.js
-
-- interesting:
+- interesting?
   - http://wicky.nillia.ms/headroom.js/
