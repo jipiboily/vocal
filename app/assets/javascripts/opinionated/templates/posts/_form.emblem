@@ -1,5 +1,8 @@
 form.post-form
-  input{ bind-attr value="controller.title" } type="text"
+  input{ bind-attr value="controller.title" } type="text" name='title'
+  textarea name='markdown'
+  textarea name='html'
+  button click='save' Save
 
 div.markdown.large-6.columns contenteditable="true"
   = unbound controller.markdown

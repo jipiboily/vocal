@@ -26,6 +26,9 @@ class @opinionatedEditor
     rendered_preview = @render(markdown)
     @log('Rendered preview:')
     @log(rendered_preview)
+    # Update text area. TODO: this sound way more "hacky" than it should in Ember?
+    $('textarea[name=markdown]').text(markdown)
+    $('textarea[name=html]').text(rendered_preview)
     $(@previewSelector).html(rendered_preview)
   
   render: (markdown) ->
