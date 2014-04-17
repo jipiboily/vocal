@@ -1,3 +1,2 @@
 .post-new
-  form
-    input type="text" {{controller.title}}
+  h1 we should (but `controller is null right now`): render "posts/_form" controller
