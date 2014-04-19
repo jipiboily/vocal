@@ -1,3 +1,4 @@
+= link-to 'post.edit' controller | Edit
 h1= controller.title
-p= controller.markdown
+p {{{controller.html}}}
 = link-to 'post.edit' controller | Edit
