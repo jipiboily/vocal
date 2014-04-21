@@ -16,8 +16,7 @@ $(document).foundation()
 $(document).on "click", ".off-canvas-list a", (e) ->
   $(".left-off-canvas-toggle").click()
 
-
-# Markdown helper  
+# Markdown helper
 Ember.Handlebars.helper "render-markdown", (input) ->
   new Handlebars.SafeString(marked(input)) if input
 
@@ -36,3 +35,9 @@ marked.setOptions
 
 editor = new opinionatedEditor('.markdown', '.preview', true)
 editor.init()
+
+# This is a helper to remove duplicated code
+Opinionated.postProperties = ->
+  title: $("input[name=title]").val()
+  markdown: $("textarea[name=markdown]").text()
+  html: $("textarea[name=html]").text()
