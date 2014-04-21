@@ -1,2 +1,2 @@
 .post-new
-  render "posts/_form" controller
+  partial "posts/_form"

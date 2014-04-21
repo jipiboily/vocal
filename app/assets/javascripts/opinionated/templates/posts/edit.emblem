@@ -1,2 +1,2 @@
 .post-edit
-  render "posts/_form" controller
+  partial "posts/_form"
