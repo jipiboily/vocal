@@ -19,7 +19,7 @@ $(document).on "click", ".off-canvas-list a", (e) ->
 
 # Markdown helper  
 Ember.Handlebars.helper "render-markdown", (input) ->
-  new Handlebars.SafeString(marked(input))
+  new Handlebars.SafeString(marked(input)) if input
 
 # Marked's config
 marked.setOptions

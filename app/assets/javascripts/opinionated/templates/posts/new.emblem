@@ -1,2 +1,2 @@
 .post-new
-  h1 we should (but `controller is null right now`): render "posts/_form" controller
+  render "posts/_form" controller

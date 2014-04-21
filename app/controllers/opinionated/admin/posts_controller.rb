@@ -10,7 +10,7 @@ class Opinionated::Admin::PostsController < Opinionated::AdminController
   def create
     post = Opinionated::Post.new
     post.update!(post_params)
-    render json: { save: true }
+    render json: post
   end
 
   def update
