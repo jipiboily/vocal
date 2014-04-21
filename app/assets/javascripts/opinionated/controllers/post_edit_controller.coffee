@@ -1,8 +1,9 @@
 Opinionated.PostEditController = Ember.ObjectController.extend
-  actions: 
+  actions:
     save: ->
       post = @get('model')
-      post.set('title', $('input[name=title]').val())
-      post.set('markdown', $('textarea[name=markdown]').text())
-      post.set('html', $('textarea[name=html]').text())
-      post.save()
+      # This is hacky, but depending on if we just created the post and got
+      # redirected here or if we loaded the post, this is one or the other
+      # that will work
+      post_id = if post.id? then post.id else post.get('id')
+      Opinionated.CustomPostAdapter.update(post_id)

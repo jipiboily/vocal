@@ -8,7 +8,7 @@
 #= require_tree ./templates
 #= require_tree ./routes
 #= require ./router
-#= require ./lib/editor
+#= require_tree ./lib
 #= require_self
 
 $(document).foundation()
