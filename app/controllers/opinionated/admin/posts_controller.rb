@@ -8,7 +8,9 @@ class Opinionated::Admin::PostsController < Opinionated::AdminController
   end
 
   def create
-    binding.remote_pry
+    post = Opinionated::Post.new
+    post.update!(post_params)
+    render json: { save: true }
   end
 
   def update
