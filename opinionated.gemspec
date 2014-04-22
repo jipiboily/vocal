@@ -38,4 +38,5 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'spring-commands-rspec'
   s.add_development_dependency 'terminal-notifier-guard'
   s.add_development_dependency 'pry'
+  s.add_development_dependency 'pry-remote'
 end
