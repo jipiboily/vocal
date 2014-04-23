@@ -7,8 +7,12 @@ class CreateOpinionatedPosts < ActiveRecord::Migration
       t.text :html
       t.integer :state
       t.integer :user_id
+      t.string :url
+      t.datetime :published_at
 
       t.timestamps
     end
+
+    add_index :opinionated_posts, :url
   end
 end

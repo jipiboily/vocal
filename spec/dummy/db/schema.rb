@@ -22,9 +22,13 @@ ActiveRecord::Schema.define(version: 20140302132148) do
     t.text     "html"
     t.integer  "state"
     t.integer  "user_id"
+    t.string   "url"
+    t.datetime "published_at"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_index "opinionated_posts", ["url"], name: "index_opinionated_posts_on_url", using: :btree
 
   create_table "opinionated_users", force: true do |t|
     t.string   "name"
