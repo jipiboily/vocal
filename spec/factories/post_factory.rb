@@ -6,5 +6,9 @@ FactoryGirl.define do
       <ul>
       <li>meh</li>
       </ul>"
+
+    trait :published do
+      state :published
+    end
   end
 end

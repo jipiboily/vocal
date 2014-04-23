@@ -8,11 +8,27 @@ describe Opinionated::Admin::PostsController do
   end
 
   describe '#create' do
+    let(:new_post) { Opinionated::Post.last }
+
     it {
       expect {
         post :create, post: { title: 'meh' }
       }.to change(Opinionated::Post, :count).by(1)
     }
+
+    context 'published == true' do
+      it 'sets the post to published state' do
+        post :create, post: { title: 'meh', published: 'true' }
+        expect(new_post.published?).to be_true
+      end
+    end
+
+    context 'published != true' do
+      it 'sets the post to the draft state' do
+        post :create, post: { title: 'meh', published: 'false' }
+        expect(new_post.draft?).to be_true
+      end
+    end
   end
 
   describe '#update' do
@@ -22,6 +38,24 @@ describe Opinionated::Admin::PostsController do
       put :update, id: post.id, post: { title: 'Hey!' }
       post.reload
       expect(post.title).to eq 'Hey!'
+    end
+
+    describe 'publish state' do
+      context 'published == true' do
+        it 'sets the post to published state' do
+          put :update, id: post.id, post: { published: 'true' }
+          expect(post.reload.published?).to be_true
+        end
+      end
+
+      context 'published != true' do
+        let(:post) { create(:post, :published) }
+
+        it 'sets the post to the draft state' do
+          put :update, id: post.id, post: { published: 'false' }
+          expect(post.reload.draft?).to be_true
+        end
+      end
     end
   end
 end
