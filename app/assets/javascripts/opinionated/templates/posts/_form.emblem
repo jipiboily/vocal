@@ -1,8 +1,15 @@
 form.post-form
-  input{ bind-attr value="controller.title" } type="text" name='title'
+  input.title{ bind-attr value="controller.title" } type="text" name='title' placeholder='Some title...'
+  .published
+    label Published:
+    input{ bind-attr checked=controller.published } type='checkbox' name='published'
+  .published_at
+    input{ bind-attr value="controller.published_at" } type="text" name='published_at' placeholder='2014/04/23'
+  .url
+    input{ bind-attr value="controller.url" } type="text" name='url' placeholder='url-to-my-post (excluding the first slash)'
+  button click='save' Save
   textarea name='markdown' = unbound controller.markdown
   textarea name='html' = unbound controller.html
-  button click='save' Save
 
 div.markdown.large-6.columns contenteditable="true"
   = unbound controller.markdown

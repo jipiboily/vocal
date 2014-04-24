@@ -41,3 +41,6 @@ Opinionated.postProperties = ->
   title: $("input[name=title]").val()
   markdown: $("textarea[name=markdown]").text()
   html: $("textarea[name=html]").text()
+  url: $("input[name=url]").val()
+  published: $("input[name=published]").is(':checked')
+  published_at: $("input[name=published_at]").val()

@@ -1,4 +1,9 @@
+attr = DS.attr
+
 Opinionated.Post = DS.Model.extend
-  title: DS.attr('string')
-  markdown: DS.attr('string')
-  html: DS.attr('string')
+  title: attr('string')
+  markdown: attr('string')
+  html: attr('string')
+  published_at: attr('string')
+  published: attr('boolean')
+  url: attr('string')

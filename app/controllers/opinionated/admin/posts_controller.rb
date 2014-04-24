@@ -23,10 +23,12 @@ class Opinionated::Admin::PostsController < Opinionated::AdminController
 
   private
   def post_params
-    params.require(:post).permit(:title, :markdown, :html)
+    @pubslihed = params[:post][:published]
+    params[:post].delete(:published)
+    params.require(:post).permit(:title, :markdown, :html, :published_at, :url)
   end
 
   def to_publish?
-    params[:post][:published] == 'true'
+    @pubslihed == 'true'
   end
 end
