@@ -43,7 +43,7 @@ describe Opinionated::Admin::PostsController do
     describe 'publish state' do
       context 'published == true' do
         it 'sets the post to published state' do
-          put :update, id: post.id, post: { published: 'true' }
+          put :update, id: post.id, post: { title: 'meh', published: 'true' }
           expect(post.reload.published?).to be_true
         end
       end
@@ -52,7 +52,7 @@ describe Opinionated::Admin::PostsController do
         let(:post) { create(:post, :published) }
 
         it 'sets the post to the draft state' do
-          put :update, id: post.id, post: { published: 'false' }
+          put :update, id: post.id, post: { title: 'meh', published: 'false' }
           expect(post.reload.draft?).to be_true
         end
       end
