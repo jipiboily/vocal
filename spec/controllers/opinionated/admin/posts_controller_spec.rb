@@ -29,6 +29,14 @@ describe Opinionated::Admin::PostsController do
         expect(new_post.draft?).to be_true
       end
     end
+
+    describe 'author is current user' do
+      before do
+        post :create, post: { title: 'meh' }
+      end
+
+      it { expect(Opinionated::Post.last.user_id).to eq user.id }
+    end
   end
 
   describe '#update' do

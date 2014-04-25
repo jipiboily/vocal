@@ -9,6 +9,7 @@ class Opinionated::Admin::PostsController < Opinionated::AdminController
 
   def create
     post = Opinionated::Post.new
+    post.user_id = current_user.id
     post.update!(post_params)
     post.publish! if to_publish?
     render json: post
