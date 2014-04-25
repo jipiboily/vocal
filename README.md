@@ -6,6 +6,7 @@ A Rails blogging engine, with opinions.
 
 [![Build Status](https://travis-ci.org/jipiboily/opinionated.svg)](https://travis-ci.org/jipiboily/opinionated)
 [![Code Climate](https://codeclimate.com/github/jipiboily/opinionated.png)](https://codeclimate.com/github/jipiboily/opinionated)
+[![Coverage Status](https://coveralls.io/repos/jipiboily/opinionated/badge.png)](https://coveralls.io/r/jipiboily/opinionated)
 
 ## Some opinions
 
