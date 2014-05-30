@@ -21,10 +21,10 @@
   - [ ] paging?
 - [ ] replace date picker by date AND time picker
 - [ ] nice 404 (especially for older URLs, like tags)
-- [ ] some keyboard shortcuts for the editor and other stuff? (bold CMD+B, new post (CMD-OPTION-N), save the post (CMD+OPTION+S), publish CMD+OPTION+P)
+- [ ] support for some caching mechanism (memcached or redis)
 
 ## 0.2 (fin octobre)
-- [ ] support for some caching mechanism (memcached or redis)
+- [ ] some keyboard shortcuts for the editor and other stuff? (bold CMD+B, new post (CMD-OPTION-N), save the post (CMD+OPTION+S), publish CMD+OPTION+P)
 - [ ] add analytics for RSS (sneak-in the dashboard while I am there?)
 - [ ] popular posts (hard coded or based on tags)
 
