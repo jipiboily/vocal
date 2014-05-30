@@ -4,7 +4,7 @@ form.post-form
     label Published:
     input{ bind-attr checked=controller.published } type='checkbox' name='published'
   .published_at
-    input{ bind-attr value="controller.published_at" } type="text" name='published_at' placeholder='2014/04/23'
+    input{ bind-attr value="controller.published_at" } type="date" name='published_at' placeholder='2014/04/23'
   .url
     input{ bind-attr value="controller.url" } type="text" name='url' placeholder='url-to-my-post (excluding the first slash)'
   button click='save' Save
