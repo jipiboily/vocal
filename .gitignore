@@ -10,3 +10,6 @@ spec/dummy/config/database.yml
 Gemfile.lock
 
 .ruby-version
+
+# Test coverage generation goes there...
+coverage
