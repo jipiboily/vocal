@@ -22,7 +22,7 @@ module Opinionated
 
     private
     def generate_url
-      url ||= self.title.parameterize
+      self.url ||= self.title.parameterize if self.title
     end
   end
 end
