@@ -6,6 +6,8 @@ module Opinionated
       self.state ||= :draft
     end
 
+    before_save :generate_url
+
     def unpublish!
       draft!
     end
@@ -16,6 +18,11 @@ module Opinionated
 
     def delete!
       deleted!
+    end
+
+    private
+    def generate_url
+      url ||= self.title.parameterize
     end
   end
 end

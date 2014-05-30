@@ -2,6 +2,15 @@ require 'spec_helper'
 
 module Opinionated
   describe Post do
+    describe 'before_save :generate_url' do
+      it 'generates a url with the title' do
+        post = Post.new
+        post.title = 'Some title!'
+        post.save
+        expect(post.reload.url).to eq 'some-title'
+      end
+    end
+
     describe 'states' do
       it { expect(Post.new.draft?).to be_true }
 
