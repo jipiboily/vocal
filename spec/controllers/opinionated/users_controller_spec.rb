@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe Opinionated::UsersController do
+describe Opinionated::UsersController, :type => :controller do
   describe 'GET #new' do
     context 'unauthenticated' do
       before do

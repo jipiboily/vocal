@@ -1,10 +1,10 @@
 require 'spec_helper'
 
-describe Opinionated::User do
+describe Opinionated::User, :type => :model do
   let(:user) { create(:user) }
 
-  describe :relations do
-    it { should have_many(:posts) }
+  describe ' @post with the current post if pu' do
+    it { is_expected.to have_many(:posts) }
   end
 
   describe 'validations' do
@@ -14,7 +14,7 @@ describe Opinionated::User do
       expect(new_user.errors.messages[:email]).to eq ['has already been taken']
     end
 
-    it { should validate_presence_of :email }
-    it { should validate_presence_of :name }
+    it { is_expected.to validate_presence_of :email }
+    it { is_expected.to validate_presence_of :name }
   end
 end

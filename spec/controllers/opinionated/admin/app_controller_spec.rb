@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe Opinionated::Admin::AppController do
+describe Opinionated::Admin::AppController, :type => :controller do
   let(:user) { create :user }
 
   describe 'authentication' do
@@ -18,7 +18,7 @@ describe Opinionated::Admin::AppController do
         get :app
       end
 
-      it { should render_template('admin_app') }
+      it { is_expected.to render_template('admin_app') }
     end
   end
 end

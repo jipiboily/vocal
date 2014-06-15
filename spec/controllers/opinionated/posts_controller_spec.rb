@@ -1,9 +1,9 @@
 require 'spec_helper'
 
-describe Opinionated::PostsController do
+describe Opinionated::PostsController, :type => :controller do
   describe '#index' do
     it 'sets @posts with published posts' do
-      Opinionated::Post.should_receive(:published).and_call_original
+      expect(Opinionated::Post).to receive(:published).and_call_original
       get :index
     end
 
@@ -17,7 +17,7 @@ describe Opinionated::PostsController do
   end
 
   describe '#show' do
-    context :published do
+    context 'published' do
       let(:post) { create(:post, :published) }
 
       it 'sets @post with the current post if published' do
@@ -26,7 +26,7 @@ describe Opinionated::PostsController do
       end
     end
 
-    context :draft do
+    context 'draft' do
       let(:post) { create(:post, :draft) }
 
       it 'errors out 404 if post is not published' do

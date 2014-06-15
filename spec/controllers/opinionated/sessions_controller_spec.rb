@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe Opinionated::SessionsController do
+describe Opinionated::SessionsController, :type => :controller do
   let(:user) { create :user }
 
   describe 'GET #new' do

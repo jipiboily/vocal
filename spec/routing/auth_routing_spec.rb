@@ -1,6 +1,6 @@
 require "spec_helper"
 
-describe 'authentication routes' do
+describe 'authentication routes', :type => :routing do
   it { expect(get: 'login').to route_to(controller: 'opinionated/sessions', action: 'new') }
   it { expect(post: 'login').to route_to(controller: 'opinionated/sessions', action: 'create') }
 

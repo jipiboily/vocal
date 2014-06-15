@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 module Opinionated
-  describe Post do
+  describe Post, :type => :model do
     describe 'before_save :generate_url' do
       context 'with a title' do
         let(:post) { Post.new(title: 'Some title!', user: create(:user)) }
@@ -30,33 +30,33 @@ module Opinionated
     describe 'states' do
       let(:post) { build(:post, :draft) }
 
-      it { expect(Post.new.draft?).to be_true }
+      it { expect(Post.new.draft?).to be_truthy }
 
       describe '#publish!' do
         before { post.publish! }
 
-        it { expect(post.published?).to be_true }
+        it { expect(post.published?).to be_truthy }
       end
 
       describe '#unpublish!' do
         before { post.unpublish! }
 
-        it { expect(post.draft?).to be_true }
+        it { expect(post.draft?).to be_truthy }
       end
 
       describe '#delete!' do
         before { post.delete! }
 
-        it { expect(post.deleted?).to be_true }
+        it { expect(post.deleted?).to be_truthy }
       end
     end
 
-    describe :relations do
-      it { should belong_to(:user) }
+    describe 'relations' do
+      it { is_expected.to belong_to(:user) }
     end
 
-    describe :validations do
-      it { should validate_presence_of(:user_id) }
+    describe 'validations' do
+      it { is_expected.to validate_presence_of(:user_id) }
 
       context 'published' do
         it 'requires a published_at date to actually a post' do
