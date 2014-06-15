@@ -3,6 +3,10 @@ require 'spec_helper'
 describe Opinionated::User do
   let(:user) { create(:user) }
 
+  describe :relations do
+    it { should have_many(:posts) }
+  end
+
   describe 'validations' do
     it 'validate_uniqueness_of :email' do
       new_user = Opinionated::User.new(email: user.email)

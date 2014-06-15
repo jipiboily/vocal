@@ -18,7 +18,7 @@ describe Opinionated::Admin::PostsController do
 
     context 'published == true' do
       it 'sets the post to published state' do
-        post :create, post: { title: 'meh', published: 'true' }
+        post :create, post: { title: 'meh', published: 'true', published_at: '2014/12/30' }
         expect(new_post.published?).to be_true
       end
     end

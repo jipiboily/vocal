@@ -8,8 +8,8 @@ describe Opinionated::PostsController do
     end
 
     it 'sets @posts with posts in right order' do
-      second_in_list = create(:post, :published, published_at: 1.year.ago)
-      first_in_list = create(:post, :published, published_at: 1.day.ago)
+      second_in_list = create(:post, :published, published_at: '2014-12-30')
+      first_in_list = create(:post, :published, published_at: '2014-12-31')
       get :index
       expect(assigns(:posts).first).to eq first_in_list
       expect(assigns(:posts).last).to eq second_in_list

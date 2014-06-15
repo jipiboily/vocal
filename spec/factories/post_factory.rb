@@ -6,6 +6,11 @@ FactoryGirl.define do
       <ul>
       <li>meh</li>
       </ul>"
+    published_at '2014-12-30'
+
+    after(:build) do |post|
+      post.user_id ||= create(:user).id
+    end
 
     Opinionated::Post.states.keys.each do |state_name|
       trait state_name.to_sym do # :published, :draft, :deleted...
