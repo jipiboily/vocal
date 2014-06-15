@@ -15,4 +15,31 @@ describe Opinionated::PostsController do
       expect(assigns(:posts).last).to eq second_in_list
     end
   end
+
+  describe '#show' do
+    context :published do
+      let(:post) { create(:post, :published) }
+
+      it 'sets @post with the current post if published' do
+        get :show, post_url: post.url
+        expect(assigns(:post)).to be_a Opinionated::Post
+      end
+    end
+
+    context :draft do
+      let(:post) { create(:post, :draft) }
+
+      it 'errors out 404 if post is not published' do
+        get :show, post_url: post.url
+        expect(response.status).to eq 404
+      end
+    end
+
+    context 'does not exist at all' do
+      it 'errors out 404 if there is no post there' do
+        get :show, post_url: 'nowhere'
+        expect(response.status).to eq 404
+      end
+    end
+  end
 end

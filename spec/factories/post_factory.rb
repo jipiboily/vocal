@@ -7,8 +7,10 @@ FactoryGirl.define do
       <li>meh</li>
       </ul>"
 
-    trait :published do
-      state :published
+    Opinionated::Post.states.keys.each do |state_name|
+      trait state_name.to_sym do # :published, :draft, :deleted...
+        state state_name
+      end
     end
   end
 end

@@ -12,6 +12,7 @@ Opinionated::Engine.routes.draw do
   post 'signup', to: 'users#create', as: 'users'
 
   get 'logout', to: 'sessions#destroy', as: 'logout'
-  
+
   get '/', to: 'posts#index'
+  get '*post_url', to: 'posts#show', as: 'post'
 end
