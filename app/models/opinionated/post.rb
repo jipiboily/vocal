@@ -33,7 +33,9 @@ module Opinionated
 
     private
     def generate_url
-      self.url ||= self.title.parameterize if self.title
+      if self.url.nil? || self.url.empty?
+        self.url = self.title.parameterize if self.title
+      end
     end
 
     def published_at_required_to_publish

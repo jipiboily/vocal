@@ -3,12 +3,27 @@ require 'spec_helper'
 module Opinionated
   describe Post do
     describe 'before_save :generate_url' do
-      it 'generates a url with the title' do
-        post = Post.new
-        post.title = 'Some title!'
-        post.user = create(:user)
-        post.save
-        expect(post.reload.url).to eq 'some-title'
+      context 'with a title' do
+        let(:post) { Post.new(title: 'Some title!', user: create(:user)) }
+        it 'generates a url with the title' do
+          post.save
+          expect(post.reload.url).to eq 'some-title'
+        end
+
+        it 'generates a url if the URL is empty or nil' do
+          post.url = ''
+          post.save
+          expect(post.reload.url).to eq 'some-title'
+        end
+      end
+
+      context 'with a URL' do
+        it 'does not overwrite it' do
+          post = create(:post)
+          post.title = 'new title'
+          post.save
+          expect(post.reload.url).not_to eq 'new-title'
+        end
       end
     end
 
