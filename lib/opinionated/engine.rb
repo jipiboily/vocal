@@ -2,6 +2,7 @@ require 'slim'
 require 'rails-assets-foundation'
 require 'ember-rails'
 require 'emblem/rails'
+require 'configatron'
 
 module Opinionated
   class Engine < ::Rails::Engine
@@ -13,5 +14,9 @@ module Opinionated
   end
 
   module Opinionated::Admin
+  end
+
+  def self.config
+    configatron.opinionated
   end
 end
