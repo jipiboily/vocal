@@ -1,6 +1,6 @@
 # ROADMAP
 ## 0.01 (pre-MVP - just to replace my own blog) - mi-juillet
-- [ ] date (& time?) picker (just date for now)
+- [X] date (& time?) picker (just date for now) -> ended up using native brower 'date' input. Sorry, old browser users, you'll have to suffer for now.
 - [ ] frontend
   - [ ] theme structure
   - [ ] latest posts (5 derniers?) - spécifique au thème ou à mon site?
