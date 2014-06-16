@@ -1,0 +1,1 @@
+Opinionated.config.theme = 'default'
