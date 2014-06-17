@@ -44,3 +44,16 @@
   - WEBCAM + JAVASCRIPT = http://thenextweb.com/insider/2013/12/16/heres-digg-founder-kevin-roses-idea-new-blogging-platform-called-tiny/
   - http://thenextweb.com/insider/2013/12/16/heres-digg-founder-kevin-roses-idea-new-blogging-platform-called-tiny/
   - https://developer.mozilla.org/en-US/docs/WebRTC/Taking_webcam_photos
+
+
+## MORE IDEAS
+- amount of time to read (there might be some JS stuff to calculate that apparently, maybe som jQuery plugin or something?)
+- text to speech would be great
+- commenting in text like meldium (selecting a paragraph, or per paragraph/sentence commenting), in addition to disqus?
+- you can take a picture for each blog post, of you while writing it or something like that, with blur effect added (not so sure yet)
+- **Dashboard**
+  - number of drafts
+  - number of posts
+  - number of readers right now online
+  - number of readers in the last (configurable? Dropdown and change that?) (24 hours, 7 days, 30 days, last 365 days, this year)
+  - most popular blog posts in the last.... (configurable? Dropdown and change that?)

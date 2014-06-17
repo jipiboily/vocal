@@ -38,17 +38,3 @@ Then jump to the configuration...
 ```ruby
 Opinionated.config.theme = 'default' # default is the name of the theme. You
 ```
-
-## Some ideas for the future...
-
-First, there is a ROADMAP, which is more an idealistic vision of what would happen...but no promise at all! See the ROADMAP.md in repo...take a look at it if you want to help, or dream?
-
-### Bonus features
-
-- you can take a picture for each blog post, of you while writing it or something like that, with blur effect added (not so sure yet)
-- **Dashboard**
-  - number of drafts
-  - number of posts
-  - number of readers right now online
-  - number of readers in the last (configurable? Dropdown and change that?) (24 hours, 7 days, 30 days, last 365 days, this year)
-  - most popular blog posts in the last.... (configurable? Dropdown and change that?)
