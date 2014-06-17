@@ -5,6 +5,7 @@ require 'emblem/rails'
 require 'configatron'
 
 module Opinionated
+  module Opinionated::Theme;end
   class Engine < ::Rails::Engine
     isolate_namespace Opinionated
     # TODO: it doesn't seem to work right now for the theme helpers...let's
