@@ -1,4 +1,4 @@
-module Opinionated::Theme::Helpers
+class Opinionated::Theme::Helpers
   def self.theme_name
     Opinionated.config.theme
   end
