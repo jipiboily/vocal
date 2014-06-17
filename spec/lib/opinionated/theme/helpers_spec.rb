@@ -37,7 +37,7 @@ describe Opinionated::Theme::Helpers do
 
     # TODO: find a way to have that working on other's machines and on Travis
     # while not stubbing Bundler here
-    it { expect(subject.root_path.to_s).to eq '/Users/jipiboily/code/opinionated-theme-default' }
+    it { expect(subject.root_path.to_s).to include '/opinionated-theme-default' }
   end
 
   describe '.add_asset_path' do
