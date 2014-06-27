@@ -57,3 +57,4 @@
   - number of readers right now online
   - number of readers in the last (configurable? Dropdown and change that?) (24 hours, 7 days, 30 days, last 365 days, this year)
   - most popular blog posts in the last.... (configurable? Dropdown and change that?)
+  - inline commenting with something like http://aroc.github.io/side-comments-demo/?
