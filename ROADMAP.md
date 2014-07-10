@@ -8,7 +8,7 @@
   - [ ] comments with disqus
 - [ ] syntax highlighting style: same in admin and front
 - [ ] tags/categories
-- [ ] choose the final name
+- [X] choose the final name (I found the name, reserved it on Rubygems, just need to rename repo and all)
 - [ ] RSS feed
 
 ## 0.1, aka MVP - début septembre (avant l'io)
