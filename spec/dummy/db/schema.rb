@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 20140530033440) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "opinionated_posts", force: true do |t|
+  create_table "vocal_posts", force: true do |t|
     t.string   "title"
     t.text     "markdown"
     t.text     "html"
@@ -28,9 +28,9 @@ ActiveRecord::Schema.define(version: 20140530033440) do
     t.datetime "updated_at"
   end
 
-  add_index "opinionated_posts", ["url"], name: "index_opinionated_posts_on_url", using: :btree
+  add_index "vocal_posts", ["url"], name: "index_vocal_posts_on_url", using: :btree
 
-  create_table "opinionated_users", force: true do |t|
+  create_table "vocal_users", force: true do |t|
     t.string   "name"
     t.string   "email"
     t.string   "password_digest"

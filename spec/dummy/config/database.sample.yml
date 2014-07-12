@@ -1,7 +1,7 @@
 development:
   adapter: postgresql
   host: localhost
-  database: opinionated_dev
+  database: vocal_dev
   username: userX
 
 # Warning: The database defined as "test" will be erased and
@@ -10,6 +10,6 @@ development:
 test: &test
   adapter: postgresql
   host: localhost
-  database: opinionated_test
+  database: vocal_test
   username: userX
   min_messages: WARNING

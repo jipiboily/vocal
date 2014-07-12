@@ -9,7 +9,7 @@ require "sprockets/railtie"
 # require "rails/test_unit/railtie"
 
 Bundler.require(*Rails.groups)
-require "opinionated"
+require "vocal"
 
 module Dummy
   class Application < Rails::Application
@@ -24,6 +24,6 @@ module Dummy
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
-    config.handlebars.templates_root = 'opinionated/templates'
+    config.handlebars.templates_root = 'vocal/templates'
   end
 end

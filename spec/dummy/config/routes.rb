@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
-  mount Opinionated::Engine => "/"
+  mount Vocal::Engine => "/"
 end

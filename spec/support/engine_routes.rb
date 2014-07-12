@@ -1,10 +1,10 @@
-module Opinionated::SpecRouteHelper
+module Vocal::SpecRouteHelper
   def self.included(base)
-    base.routes { Opinionated::Engine.routes }
+    base.routes { Vocal::Engine.routes }
   end
 end
 
 RSpec.configure do |config|
-  config.include Opinionated::SpecRouteHelper, type: :routing
-  config.include Opinionated::SpecRouteHelper, type: :controller
+  config.include Vocal::SpecRouteHelper, type: :routing
+  config.include Vocal::SpecRouteHelper, type: :controller
 end

@@ -1,0 +1,17 @@
+.off-canvas-wrap
+  .inner-wrap
+
+    nav.tab-bar
+      a.left-off-canvas-toggle.menu-icon href="#" 
+        span Vocal
+
+    aside.left-off-canvas-menu
+      ul.off-canvas-list
+        li
+          = link-to 'posts' | Post list
+        li
+          = link-to 'post.new' | New post
+        li
+          a href="/logout" Logout
+    
+    = outlet

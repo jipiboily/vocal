@@ -1,4 +1,5 @@
-Opinionated::Engine.routes.draw do
+Vocal::Engine.routes.draw do
+  # reserved_words = ['l', 'pages', 'tags', 'categories','admin','css', 'js', 'assets', 'images']
 
   namespace :admin do
     get '/' => 'app#app'
