@@ -4,9 +4,9 @@ A Rails blogging engine, with opinions.
 
 **IMPORTANT**: this is a very, very, very early version, not yet implemented and unlikely to get finished anytime soon.
 
-[![Build Status](https://travis-ci.org/jipiboily/vocal.svg)](https://travis-ci.org/jipiboily/vocal)
-[![Code Climate](https://codeclimate.com/github/jipiboily/vocal.png)](https://codeclimate.com/github/jipiboily/vocal)
-[![Coverage Status](https://coveralls.io/repos/jipiboily/vocal/badge.png)](https://coveralls.io/r/jipiboily/vocal)
+[![Build Status](http://img.shields.io/travis/jipiboily/vocal/master.svg?style=flat)](https://travis-ci.org/jipiboily/vocal)
+[![Code Climate](http://img.shields.io/codeclimate/github/jipiboily/vocal.svg?style=flat)](https://codeclimate.com/github/jipiboily/vocal.png)
+[![Coverage Status](http://img.shields.io/coveralls/jipiboily/vocal.svg?style=flat)](https://coveralls.io/r/jipiboily/vocal)
 
 ## Some opinions and features
 
