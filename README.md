@@ -4,9 +4,9 @@
 <p align="center">
   <b>Blog + Markdown = :heart:</b>
   <br />
-  [![Build Status](http://img.shields.io/travis/jipiboily/vocal/master.svg?style=flat)](https://travis-ci.org/jipiboily/vocal)
-  [![Code Climate](http://img.shields.io/codeclimate/github/jipiboily/vocal.svg?style=flat)](https://codeclimate.com/github/jipiboily/vocal)
-  [![Coverage Status](http://img.shields.io/coveralls/jipiboily/vocal.svg?style=flat)](https://coveralls.io/r/jipiboily/vocal)
+  <a href="https://travis-ci.org/jipiboily/vocal"><img src="http://img.shields.io/travis/jipiboily/vocal/master.svg?style=flat" alt="Build Status"></a>
+  <a href="https://codeclimate.com/github/jipiboily/vocal"><img src="http://img.shields.io/codeclimate/github/jipiboily/vocal.svg?style=flat" alt="Code Climate"></a>
+  <a href="https://coveralls.io/r/jipiboily/vocal"><img src="http://img.shields.io/coveralls/jipiboily/vocal.svg?style=flat" alt="Coverage Status"></a>
 </p>
 
 
