@@ -1,25 +1,31 @@
-# Vocal
+<h1 align="center">
+  Vocal
+</h1>
+<p align="center">
+  <b>Blog + Markdown = :heart:</b>
+  <br />
+  [![Build Status](http://img.shields.io/travis/jipiboily/vocal/master.svg?style=flat)](https://travis-ci.org/jipiboily/vocal)
+  [![Code Climate](http://img.shields.io/codeclimate/github/jipiboily/vocal.svg?style=flat)](https://codeclimate.com/github/jipiboily/vocal)
+  [![Coverage Status](http://img.shields.io/coveralls/jipiboily/vocal.svg?style=flat)](https://coveralls.io/r/jipiboily/vocal)
+</p>
 
-A Rails blogging engine, with opinions.
+
 
 **IMPORTANT**: this is a very, very, very early version, not yet implemented and unlikely to get finished anytime soon.
 
-[![Build Status](http://img.shields.io/travis/jipiboily/vocal/master.svg?style=flat)](https://travis-ci.org/jipiboily/vocal)
-[![Code Climate](http://img.shields.io/codeclimate/github/jipiboily/vocal.svg?style=flat)](https://codeclimate.com/github/jipiboily/vocal.png)
-[![Coverage Status](http://img.shields.io/coveralls/jipiboily/vocal.svg?style=flat)](https://coveralls.io/r/jipiboily/vocal)
 
-## Some opinions and features
+## Features
 
 - everything is in Markdown, side by side edit + preview in admin
 -- supports GFM
 - admin is built with Ember
 - Vocal does not aim for minimal requirements, so it might not be as easy to mount into an existing app as [Monologue](https://github.com/jipiboily/monologue) is
-- will not try to get anything working for old browsers
-- I want it to be fast
-- I dream about a dashboard with some basic analytics
+- I will not try to get anything working for old browsers
+- I want it to be fast, at least (in future versions)
+- I dream about a dashboard with some basic analytics (in future versions)
 - I want a couple of features to help reader retention (reading suggestions when reaching the end being one)
 - it will have basic support for "static" pages for stuff like about pages
-- I <3 keyboard shortcuts, so there will be some in admin
+- I <3 keyboard shortcuts, so there will be some in admin (in future versions)
 - No user management UI for now, single user, basically (well, not exactly, but this would not be usable in serious situations with multiple users)
 
 ## Installation
