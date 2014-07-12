@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/jipiboily/vocal.png?label=ready&title=Ready)](https://waffle.io/jipiboily/vocal)
 # Vocal
 
 A Rails blogging engine, with opinions.
