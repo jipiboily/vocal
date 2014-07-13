@@ -5,7 +5,7 @@
   - [X] theme structure
   - [ ] latest posts (5 derniers?) - spécifique au thème ou à mon site?
   - [X] post listing
-  - [ ] comments with disqus
+  - [X] comments with disqus
 - [ ] syntax highlighting style: same in admin and front
 - [ ] tags/categories
 - [X] choose the final name (I found the name, reserved it on Rubygems, just need to rename repo and all)
