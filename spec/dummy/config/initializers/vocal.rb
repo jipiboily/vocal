@@ -1,2 +1,2 @@
 Vocal.config.theme = 'default'
-Vocal.config.disqus.shortname = 'something'
+Vocal.config.disqus.shortname = 'vocaldev'
