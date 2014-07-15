@@ -3,13 +3,17 @@
 - [X] date (& time?) picker (just date for now) -> ended up using native brower 'date' input. Sorry, old browser users, you'll have to suffer for now.
 - [ ] frontend
   - [X] theme structure
-  - [ ] latest posts (5 derniers?) - spécifique au thème ou à mon site?
   - [X] post listing
   - [X] comments with disqus
+  - [ ] include Google Analytics support
+  - [ ] choose nice font(s)
+  - [ ] choose a picture for the default top background
+  - [ ] add syntax highlighting (CSS)
 - [ ] syntax highlighting style: same in admin and front
 - [ ] tags/categories
 - [X] choose the final name (I found the name, reserved it on Rubygems, just need to rename repo and all)
 - [ ] RSS feed
+- [ ] document the full setup and config flow
 
 ## 0.1, aka MVP - début septembre (avant l'io)
 - [ ] add client side testing
