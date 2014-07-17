@@ -3,6 +3,7 @@
 #= require ember
 #= require ember-data
 #= require marked
+#= require prism
 #= require_self
 #= require vocal/vocal
 

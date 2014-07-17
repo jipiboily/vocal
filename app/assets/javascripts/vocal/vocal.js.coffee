@@ -20,6 +20,8 @@ $(document).on "click", ".off-canvas-list a", (e) ->
 Ember.Handlebars.helper "render-markdown", (input) ->
   new Handlebars.SafeString(marked(input)) if input
 
+hljs.initHighlightingOnLoad();
+
 # Marked's config
 marked.setOptions
   renderer: new marked.Renderer()
@@ -31,6 +33,8 @@ marked.setOptions
   smartLists: false
   # smartLists: true
   smartypants: false
+  highlight: (code, lang, callback) ->
+    Prism.highlight(code, Prism.languages[lang])
 
 
 editor = new vocalEditor('.markdown', '.preview', true)
