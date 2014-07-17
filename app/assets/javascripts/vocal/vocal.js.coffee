@@ -33,6 +33,7 @@ marked.setOptions
   smartLists: false
   # smartLists: true
   smartypants: false
+  langPrefix: 'language-'
   highlight: (code, lang, callback) ->
     Prism.highlight(code, Prism.languages[lang])
 
