@@ -37,7 +37,7 @@ marked.setOptions
     Prism.highlight(code, Prism.languages[lang])
 
 
-editor = new vocalEditor('.markdown', '.preview', true)
+editor = new VocalEditor('.markdown', '.preview', true)
 editor.init()
 
 # This is a helper to remove duplicated code

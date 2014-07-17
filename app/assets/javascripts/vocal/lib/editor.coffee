@@ -1,6 +1,6 @@
-class @vocalEditor
+class @VocalEditor
   constructor: (@markdownSelector, @previewSelector, @debug = false) ->
-    @cleaner = new divCleaner
+    @cleaner = new DivCleaner
 
   init: ->
     @bindEvents()
@@ -15,7 +15,7 @@ class @vocalEditor
 
   log: (text) ->
     console.log(text) if @debug
-  
+
   preview: (markdown) ->
     @log('====================')
     @log('NOT CLEAN YET:')
@@ -30,16 +30,16 @@ class @vocalEditor
     $('textarea[name=markdown]').text(markdown)
     $('textarea[name=html]').text(rendered_preview)
     $(@previewSelector).html(rendered_preview)
-  
+
   render: (markdown) ->
     new Handlebars.SafeString(marked(markdown)).string
 
 
-class divCleaner
+class DivCleaner
   clean: (content) ->
     content = @generalCleaning(content)
-    
-  # Right now, this is only tested with the latest version of Chrome and while 
+
+  # Right now, this is only tested with the latest version of Chrome and while
   # this could work with other browsers, it is far from being guaranteed.
   generalCleaning: (content) ->
     content = content.replace(/<br>/g, "\n")
