@@ -13,3 +13,6 @@ Gemfile.lock
 
 # Test coverage generation goes there...
 coverage
+
+# This is a directory I use to take notes
+notes
