@@ -35,7 +35,8 @@ marked.setOptions
   smartypants: false
   langPrefix: 'language-'
   highlight: (code, lang, callback) ->
-    Prism.highlight(code, Prism.languages[lang])
+    decoded = $("<div/>").html(code).text();
+    Prism.highlight(decoded, Prism.languages[lang])
 
 editor = new VocalEditor('.markdown', '.preview')
 editor.init()

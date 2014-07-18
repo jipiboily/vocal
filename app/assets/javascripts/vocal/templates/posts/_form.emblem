@@ -12,6 +12,6 @@ form.post-form
   textarea name='html' = unbound controller.html
 
 div.markdown.large-6.columns contenteditable="true"
-  = unbound controller.markdown
+  == unbound controller.markdown
 div.preview.large-6.columns
   = render-markdown markdown
