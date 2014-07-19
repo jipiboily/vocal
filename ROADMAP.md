@@ -8,8 +8,8 @@
   - [ ] include Google Analytics support
   - [ ] choose nice font(s)
   - [ ] choose a picture for the default top background
-  - [ ] add syntax highlighting (CSS)
-- [ ] syntax highlighting style: same in admin and front
+  - [x] add syntax highlighting (CSS)
+- [x] syntax highlighting style: same in admin and front
 - [ ] tags/categories
 - [X] choose the final name (I found the name, reserved it on Rubygems, just need to rename repo and all)
 - [ ] RSS feed
