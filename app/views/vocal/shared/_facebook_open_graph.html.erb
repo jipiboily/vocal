@@ -1,0 +1,7 @@
+<meta property="og:title" content="<%= @meta.title %>"/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="<%= request.original_url %>"/>
+<% if Vocal.config.meta.has_key?(:image_url) %>
+  <meta property="og:image" content="<%= Vocal.config.meta.image_url %>"/>
+<% end %>
+<meta property="og:site_name" content="<%= Vocal.config.meta.title %>"/>
