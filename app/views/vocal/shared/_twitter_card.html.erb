@@ -1,0 +1,10 @@
+<% if Vocal.config.social.twitter.has_key?(:username) %>
+  <meta property="twitter:card" content="summary" />
+  <meta property="twitter:site" content="@<%= Vocal.config.social.twitter.username %>" />
+  <meta property="twitter:title" content="<%= @meta.title %>" />
+  <meta property="twitter:description" content="<%= @meta.description %>" />
+  <% if Vocal.config.meta.has_key?(:image_url) %>
+    <meta property="twitter:image" content="<%= Vocal.config.meta.image_url %>" />
+  <% end %>
+  <meta property="twitter:url" content="<%= request.original_url %>" />
+<% end %>
