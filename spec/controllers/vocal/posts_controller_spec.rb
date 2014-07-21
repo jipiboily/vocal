@@ -2,6 +2,11 @@ require 'spec_helper'
 
 describe Vocal::PostsController, :type => :controller do
   describe '#index' do
+    it "calls the meta genrator" do
+      MetaGenerator.should_receive(:new).with(nil).and_call_original
+      get :index
+    end
+
     it 'sets @posts with published posts' do
       expect(Vocal::Post).to receive(:published).and_call_original
       get :index
@@ -19,6 +24,11 @@ describe Vocal::PostsController, :type => :controller do
   describe '#show' do
     context 'published' do
       let(:post) { create(:post, :published) }
+
+      it "calls the meta genrator" do
+        MetaGenerator.should_receive(:new).with(post).and_call_original
+        get :show, post_url: post.url
+      end
 
       it 'sets @post with the current post if published' do
         get :show, post_url: post.url
