@@ -20,8 +20,6 @@ $(document).on "click", ".off-canvas-list a", (e) ->
 Ember.Handlebars.helper "render-markdown", (input) ->
   new Handlebars.SafeString(marked(input)) if input
 
-hljs.initHighlightingOnLoad();
-
 # Marked's config
 marked.setOptions
   renderer: new marked.Renderer()
