@@ -42,5 +42,5 @@ Then jump to the configuration...
 - run `bundle install`
 - Set the theme:
 ```ruby
-Vocal.config.theme = 'default' # default is the name of the theme. You
+Vocal.config.theme.name = 'default' # default is the name of the theme. You
 ```

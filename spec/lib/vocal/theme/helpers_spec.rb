@@ -3,16 +3,16 @@ describe Vocal::Theme::Helpers do
 
   before do
     @default_theme_name = 'default'
-    Vocal.config.theme = 'default'
+    Vocal.config.theme.name = 'default'
   end
 
   after do
     # This is set to something different in certain specs
-    Vocal.config.theme = @default_theme_name
+    Vocal.config.theme.name = @default_theme_name
   end
 
   describe '.gem_name' do
-    before { Vocal.config.theme = 'something' }
+    before { Vocal.config.theme.name = 'something' }
 
     it { expect(subject.gem_name).to eq 'vocal-theme-something' }
   end
@@ -23,7 +23,7 @@ describe Vocal::Theme::Helpers do
   end
 
   describe '.theme_name' do
-    before { Vocal.config.theme = 'something-randome' }
+    before { Vocal.config.theme.name = 'something-randome' }
 
     it { expect(subject.theme_name).to eq 'something-randome' }
   end

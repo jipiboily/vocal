@@ -1,6 +1,6 @@
 class Vocal::Theme::Helpers
   def self.theme_name
-    Vocal.config.theme
+    Vocal.config.theme.name
   end
 
   def self.gem_name
