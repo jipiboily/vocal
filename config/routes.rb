@@ -14,6 +14,6 @@ Vocal::Engine.routes.draw do
 
   get 'logout', to: 'sessions#destroy', as: 'logout'
 
-  get '/', to: 'posts#index'
+  root to: 'posts#index'
   get '*post_url', to: 'posts#show', as: 'post'
 end
