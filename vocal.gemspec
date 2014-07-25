@@ -40,4 +40,5 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'terminal-notifier-guard'
   s.add_development_dependency 'pry'
   s.add_development_dependency 'pry-remote'
+  s.add_development_dependency 'nokogiri'
 end
