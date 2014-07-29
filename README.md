@@ -44,3 +44,30 @@ Then jump to the configuration...
 ```ruby
 Vocal.config.theme.name = 'default' # default is the name of the theme. You
 ```
+
+
+## Contribute
+
+### Setup
+
+```bash
+git clone git@github.com:jipiboily/vocal.git
+cd vocal
+bundle install
+cp spec/dummy/config/database.sample.yml spec/dummy/config/database.yml
+cd spec/dummy
+bundle exec rake app:vocal:install:migrations
+bundle exec rake db:setup
+RAILS_ENV=test bundle exec rake db:setup
+```
+
+Boot your server and go to the admin: http://localhost:3000/admin.
+
+### Optional setup steps
+
+I personally use pow, so I also add this:
+
+```bash
+ln -s ~/code/vocal/spec/dummy ~/.pow/vocal
+open http://vocal.dev/admin
+```
