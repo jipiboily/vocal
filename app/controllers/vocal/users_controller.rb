@@ -1,4 +1,6 @@
 class Vocal::UsersController < Vocal::ApplicationController
+  layout 'vocal/admin_no_session'
+
   def new
     if Vocal::User.count == 0
       @user = Vocal::User.new

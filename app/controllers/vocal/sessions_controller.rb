@@ -1,5 +1,6 @@
 class Vocal::SessionsController < Vocal::AdminController
   skip_before_action :authorize, only: [:new, :create]
+  layout 'vocal/admin_no_session'
 
   def new
     redirect_to admin_path if current_user
