@@ -16,17 +16,18 @@
 
 ## Features
 
-- everything is in Markdown, side by side edit + preview in admin
--- supports GFM
-- admin is built with Ember
+- Everything is in Markdown, side by side edit + preview in admin
+  - Supports (GFM)[https://github.github.com/github-flavored-markdown/]
 - Vocal does not aim for minimal requirements, so it might not be as easy to mount into an existing app as [Monologue](https://github.com/jipiboily/monologue) is
 - I will not try to get anything working for old browsers
+- admin is built with Ember
 - I want it to be fast, at least (in future versions)
 - I dream about a dashboard with some basic analytics (in future versions)
 - I want a couple of features to help reader retention (reading suggestions when reaching the end being one)
 - it will have basic support for "static" pages for stuff like about pages
 - I <3 keyboard shortcuts, so there will be some in admin (in future versions)
 - No user management UI for now, single user, basically (well, not exactly, but this would not be usable in serious situations with multiple users)
+- Assuming Postgres, but should work with MySQL
 
 ## Installation
 
