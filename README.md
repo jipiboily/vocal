@@ -17,7 +17,7 @@
 ## Features
 
 - Everything is in Markdown, side by side edit + preview in admin
-  - Supports (GFM)[https://github.github.com/github-flavored-markdown/]
+  - Supports [GFM](https://github.github.com/github-flavored-markdown/)
 - Vocal does not aim for minimal requirements, so it might not be as easy to mount into an existing app as [Monologue](https://github.com/jipiboily/monologue) is
 - I will not try to get anything working for old browsers
 - admin is built with Ember
