@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.email       = ['j@jipi.ca']
   s.homepage    = 'http://jipiboily.com'
   s.summary     = 'Blog engine with opinions.'
-  s.description = 'Blog engine with opinions. Nice, fast, Markdown are the keys.'
+  s.description = 'Blog engine with opinions. Markdown, nice and fast are the keys.'
   s.license     = 'MIT'
 
   s.files = Dir['{app,config,db,lib}/**/*', 'MIT-LICENSE', 'Rakefile', 'README.rdoc']
