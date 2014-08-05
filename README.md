@@ -24,7 +24,7 @@
 - I want it to be fast, at least (in future versions)
 - I dream about a dashboard with some basic analytics (in future versions)
 - I want a couple of features to help reader retention (reading suggestions when reaching the end being one)
-- it will have basic support for "static" pages for stuff like about pages
+- It will have basic support for "static" pages for stuff like about pages
 - I <3 keyboard shortcuts, so there will be some in admin (in future versions)
 - No user management UI for now, single user, basically (well, not exactly, but this would not be usable in serious situations with multiple users)
 - Assuming Postgres, but should work with MySQL
