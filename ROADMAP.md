@@ -1,6 +1,6 @@
 # ROADMAP
 
-IMPORTANT: see the GitHub issues and milestones + https://waffle.io/jipiboily/vocal to see what is being worked on next, as this was a rough plan that I wrote originally just for me (you can see the mix of French & English too :P) and is not accurate anymorre.
+**IMPORTANT: see the GitHub issues and milestones + https://waffle.io/jipiboily/vocal to see what is being worked on next, as this was a rough plan that I wrote originally just for me (you can see the mix of French & English too :P) and is not accurate anymorre.**
 
 ## 0.01 (pre-MVP - just to replace my own blog) - mi-juillet
 - [X] date (& time?) picker (just date for now) -> ended up using native brower 'date' input. Sorry, old browser users, you'll have to suffer for now.
