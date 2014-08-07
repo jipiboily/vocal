@@ -34,7 +34,10 @@ marked.setOptions
   langPrefix: 'language-'
   highlight: (code, lang, callback) ->
     decoded = $("<div/>").html(code).text();
-    Prism.highlight(decoded, Prism.languages[lang])
+    # Fallback to bash for unknown language
+    # TODO: have it displayed to the author somehow.
+    language = Prism.languages[lang] || Prism.languages['bash']
+    Prism.highlight(decoded, language)
 
 editor = new VocalEditor('.markdown', '.preview')
 editor.init()
