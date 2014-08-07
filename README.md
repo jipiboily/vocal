@@ -31,21 +31,26 @@
 
 ## Installation
 
-1. Add `source 'https://rails-assets.org'` to your Gemfile (probably as the second or third line).
-- Add `gem 'vocal'` to your `Gemfile`
-- run `bundle install`
-- ...to be completed when it actually works!
+1. Create a new Rails app: `rails new my-vocal-blorgh`.
+- `cd my-vocal-blorgh`.
+- Add `gem 'vocal'` to your `Gemfile`.
+- Add the theme Gemfile, default being `gem 'vocal-theme-default'`.
+- Run `bundle update`.
+- `bundle exec rake vocal:install:migrations` to copy Vocal's migration into your project.
+- Edit your database.yml with your database information.
+- Create `config/initializers/vocal.rb` and set the default theme:
+```ruby
+Vocal.config.theme.name = 'default' # default is the name of the theme.
+```
+- `bundle exec rake db:create && bundle exec rake db:migrate`.
+- Edit `config/routes.rb` and add `mount Vocal::Engine => "/"`
+- `rails server && open http://0.0.0.0:3000/admin` should get you to the admin signup screen (only possible when there is no admin user yet) and then the admin.
 
-Then jump to the configuration...
+Now, jump to the full configuration...
 
 ### Configuration
-1. Add the theme's gem into your Gemfile
-- run `bundle install`
-- Set the theme:
-```ruby
-Vocal.config.theme.name = 'default' # default is the name of the theme. You
-```
 
+For now, see [this example](https://github.com/jipiboily/vocal/blob/master/spec/dummy/config/initializers/vocal.rb).
 
 ## Contribute
 
