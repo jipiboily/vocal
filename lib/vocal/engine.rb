@@ -22,6 +22,8 @@ module Vocal
     initializer :assets do |config|
       Vocal::Theme::Helpers.add_asset_path
     end
+
+    config.assets.precompile += %w( vocal/admin.css vocal/admin.js )
   end
 
   module Vocal::Admin
