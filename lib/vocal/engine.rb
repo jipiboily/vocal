@@ -24,6 +24,9 @@ module Vocal
     end
 
     config.assets.precompile += %w( vocal/admin.css vocal/admin.js )
+
+    config.ember.ember_path = 'app/assets/javascripts/vocal'
+    config.handlebars.templates_root = 'vocal/templates'
   end
 
   module Vocal::Admin
