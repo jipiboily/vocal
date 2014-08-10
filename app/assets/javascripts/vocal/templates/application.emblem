@@ -13,5 +13,5 @@
           = link-to 'post.new' | New post
         li
           a href="/logout" Logout
-    
+
     = outlet
