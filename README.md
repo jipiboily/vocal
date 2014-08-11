@@ -33,6 +33,7 @@
 
 1. Create a new Rails app: `rails new my-vocal-blorgh`.
 - `cd my-vocal-blorgh`.
+- Add `source 'https://rails-assets.org'` right after `source 'https://rubygems.org'` in your `Gemfile`
 - Add `gem 'vocal'` to your `Gemfile`.
 - Add the theme Gemfile, default being `gem 'vocal-theme-default'`.
 - Run `bundle update`.
