@@ -11,7 +11,7 @@
 
 
 
-**IMPORTANT**: this is a very, very, early version, with some missing features. Here is what is missing for the version 0.0.1 to be ready: https://github.com/jipiboily/vocal/milestones/0.01%20-%20pre-MVP. That version is basically the MVP for my own blog, then I will work on 0.1 (https://github.com/jipiboily/vocal/milestones/0.1%20-%20MVP). You can look at the basic Kanban board I've setup to know where I'm at: https://waffle.io/jipiboily/vocal.
+**IMPORTANT**: this is a still an early version of Vocal, with some missing features and most probably some bugs! [Here is what is missing for the version 0.0.1 to be ready](https://github.com/jipiboily/vocal/milestones/0.01%20-%20pre-MVP). That version is basically the MVP for my own blog, then I will work on [0.0.2](https://github.com/jipiboily/vocal/milestones/0.0.2%20-%20pre-MVP%20+) and [0.1](https://github.com/jipiboily/vocal/milestones/0.1%20-%20MVP). You can look at the basic Kanban board I've setup to know where I'm at: https://waffle.io/jipiboily/vocal.
 
 
 ## Features
