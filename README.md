@@ -36,7 +36,7 @@
 - Add `source 'https://rails-assets.org'` right after `source 'https://rubygems.org'` in your `Gemfile`
 - Add `gem 'vocal'` to your `Gemfile`.
 - Add the theme Gemfile, default being `gem 'vocal-theme-default'`.
-- Run `bundle update`.
+- Run `bundle install`.
 - `bundle exec rake vocal:install:migrations` to copy Vocal's migration into your project.
 - Edit your database.yml with your database information.
 - Create `config/initializers/vocal.rb` and set the default theme:
