@@ -1,4 +1,4 @@
-class Vocal::ApplicationController < ActionController::Base
+class Vocal::ApplicationController < ::ApplicationController
   layout :theme_layout
 
   before_action :prepend_view_paths
