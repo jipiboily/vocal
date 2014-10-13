@@ -2,7 +2,7 @@ language: ruby
 before_script:
   - cp spec/dummy/config/database.travis.yml spec/dummy/config/database.yml
   - cd spec/dummy
-  - bundle exec rake db:create
+  - bundle exec rake db:create db:migrate
   - RAILS_ENV=test bundle exec rake db:migrate
   - cd ../..
 script:
