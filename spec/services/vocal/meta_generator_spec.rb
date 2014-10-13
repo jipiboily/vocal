@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe MetaGenerator do
+describe Vocal::MetaGenerator do
   let(:post) { nil }
   subject { described_class.new(post) }
 

@@ -1,4 +1,4 @@
-class MetaGenerator
+class Vocal::MetaGenerator
   include ActionView::Helpers::SanitizeHelper
   include ActionView::Helpers::TextHelper
 

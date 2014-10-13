@@ -3,7 +3,7 @@ require 'spec_helper'
 describe Vocal::PostsController, :type => :controller do
   describe '#index' do
     it "calls the meta genrator" do
-      MetaGenerator.should_receive(:new).with(nil).and_call_original
+      Vocal::MetaGenerator.should_receive(:new).with(nil).and_call_original
       get :index
     end
 
@@ -26,7 +26,7 @@ describe Vocal::PostsController, :type => :controller do
       let(:post) { create(:post, :published) }
 
       it "calls the meta genrator" do
-        MetaGenerator.should_receive(:new).with(post).and_call_original
+        Vocal::MetaGenerator.should_receive(:new).with(post).and_call_original
         get :show, post_url: post.url
       end
 
