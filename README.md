@@ -45,7 +45,8 @@ Vocal.config.theme.name = 'default' # default is the name of the theme.
 ```
 - `bundle exec rake db:create && bundle exec rake db:migrate`.
 - Edit `config/routes.rb` and add `mount Vocal::Engine => "/"`
-- `rails server && open http://0.0.0.0:3000/admin` should get you to the admin signup screen (only possible when there is no admin user yet) and then the admin.
+- `rails server`
+- `open http://0.0.0.0:3000/admin` should get you to the admin signup screen (only possible when there is no admin user yet) and then the admin.
 
 Now, jump to the full configuration...
 
