@@ -17,6 +17,9 @@ class Vocal::ApplicationController < ::ApplicationController
 
   def prepend_view_paths
     prepend_view_path Vocal::Theme::Helpers.theme_files_path
+
+    # This is for Deface (https://github.com/spree/deface) support
+    prepend_view_path Rails.root.join('app/compiled_views')
   end
 
   def theme_layout
