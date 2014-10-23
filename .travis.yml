@@ -1,6 +1,8 @@
 language: ruby
 before_script:
   - cp spec/dummy/config/database.travis.yml spec/dummy/config/database.yml
+  - cd spec/dummy
+  - bundle exec rake db:create
 script:
   - bundle exec rspec
 rvm:
