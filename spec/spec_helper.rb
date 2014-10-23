@@ -20,6 +20,9 @@ require 'slim'
 # option on the command line or in ~/.rspec, .rspec or `.rspec-local`.
 Dir[File.dirname(__FILE__) + "/support/**/*.rb"].each {|f| require f}
 
+# Ensure schema is sane for tests
+ActiveRecord::Migration.maintain_test_schema! if defined?(ActiveRecord::Migration)
+
 # Checks for pending migrations before tests are run.
 # If you are not using ActiveRecord, you can remove this line.
 ActiveRecord::Migration.check_pending! if defined?(ActiveRecord::Migration)
