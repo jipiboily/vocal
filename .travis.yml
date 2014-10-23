@@ -8,3 +8,6 @@ script:
 rvm:
   - 2.0.0
   - 2.1.3
+env:
+  - DB=mysql DB_USERNAME=root
+  - DB=postgresql DB_USERNAME=postgres
