@@ -54,6 +54,26 @@ Now, jump to the full configuration...
 
 For now, see [this example](https://github.com/jipiboily/vocal/blob/master/spec/dummy/config/initializers/vocal.rb).
 
+## How to customize Vocal, or a theme?
+
+In terms of customizations, you have a few options:
+- create your own theme.
+- add just some custom CSS or JS, if the theme supports it (the [default](https://github.com/jipiboily/vocal-theme-default) one does.)
+- use Deface. How? See the next section.
+- override any files, using the same path as the original one and it should be used instead of the original one.
+
+### Customizing with Deface
+
+First, add `gem 'deface'` in your Gemfile, then look at the [doc](https://github.com/spree/deface). You can do things like "insert X before this" and that kind of stuff, replace, and all. It's pretty sweet if you have mostly minor tweaks that would make overriding things overkill or "dangerous".
+
+A few things to note:
+- disable it in prod. Run `bundle exec rake deface:precompile` and add the compiled views to your repo, or run this task once deployed, depending on your deployment setup.
+- this is specific to Vocal, but the way theming works right now requires a little tweak so Deface will find your theme's views. Add this to your `environment.rb`, at the end. I understand this is hacky, but this is what I came up with for now, suggestions welcomed, but there is a matter of when things get loaded and all.
+  ```ruby
+  # This is so that the Deface precompile task can find it
+  ActionController::Base.append_view_path(Vocal::Theme::Helpers.theme_files_path)
+  ```
+
 ## Contribute
 
 ### Setup
